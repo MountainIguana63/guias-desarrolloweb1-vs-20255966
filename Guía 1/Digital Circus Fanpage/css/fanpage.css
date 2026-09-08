@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    background-image: url('../images/f6a38bb0d32939bc9ef8a9cb8261ea22.jpg');
+    background-color: #1a1a2e;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contenedor-central {
+    width: 80%;
+    margin: 0 auto; 
+    background-color: rgba(22, 33, 62, 0.85); 
+    padding: 30px;
+    border: 3px solid #e94560;
+}
+
+#encabezado {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contenedor-video {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gif-clips {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #3498db;
+}
+
+.boton-musica {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-musica:hover {
+    background-color: #2980b9;
+}
+
+.titulo-destacado, .titulo-seccion {
+    color: #f1a208;
+    text-align: center;
+}
+
+.texto-justificado {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#menu-botones {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.boton-enlace {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #e94560;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton-enlace:hover {
+    text-decoration: underline;
+    background-color: #c81d3d;
+}
+
+.separador {
+    border: 1px solid #e94560;
+    margin: 40px 0;
+}
+
+.capitulo {
+    background-color: rgba(26, 26, 46, 0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+}
+
+.titulo-episodio {
+    color: #f1a208;
+}
+
+.imagen-capitulo {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton-youtube {
+    color: #ffffff;
+    background-color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.tarjeta-personaje {
+    background-color: rgba(26, 26, 46, 0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+}
+
+.foto-personaje {
+    width: 200px;
+    height: auto;
+}
+
+.nombre-personaje {
+    color: #3498db;
+}
