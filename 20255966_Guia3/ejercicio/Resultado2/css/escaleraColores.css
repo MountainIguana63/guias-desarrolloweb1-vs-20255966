@@ -1,0 +1,38 @@
+/* Resultado 2: Escalera invertida (cambiamos el z-index para que la primera quede encima) */
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    position: absolute;
+}
+
+#diez_de_diamantes {
+    top: 100px;
+    left: 50px;
+    z-index: 5; /* Ahora esta es la capa superior */
+}
+
+#sota_de_diamantes {
+    top: 130px;
+    left: 80px;
+    z-index: 4;
+}
+
+#reina_de_diamantes {
+    top: 160px;
+    left: 110px;
+    z-index: 3;
+}
+
+#rey_de_diamantes {
+    top: 190px;
+    left: 140px;
+    z-index: 2;
+}
+
+#as_de_diamantes {
+    top: 220px;
+    left: 170px;
+    z-index: 1; /* El As ahora es la capa inferior */
+}
