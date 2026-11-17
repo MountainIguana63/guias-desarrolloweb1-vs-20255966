@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Catálogo de juegos - Fetch API</title>
+
+</head>
+
+<body>
+
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../img/js.png" class="bi me-2" width="48" height="48">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../pages/ejemplo1.html" class="nav-link px-2 text-white">Ejemplo 1</a></li>
+                    <li><a href="../pages/ejemplo2.html" class="nav-link px-2 text-white">Ejemplo 2</a></li>
+                    <li><a href="../pages/ejemplo3.html" class="nav-link px-2 text-white">Ejemplo 3</a></li>
+                    <li><a href="../pages/ejemplo4.html" class="nav-link px-2 text-white">Ejemplo 4</a></li>
+                    <li><a href="../pages/ejemplo5.html" class="nav-link px-2 text-warning fw-bold">
+                            <i class="bi bi-check"></i> API Juegos
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="px-4 pt-5 mt-5 text-center">
+            <h1 class="display-5 fw-bold">Catálogo de juegos gratuitos</h1>
+            <p class="lead">
+                Datos obtenidos de la API <span class="fw-bold">Free-to-Play Games Database</span> (RapidAPI)
+                por medio de Fetch API.
+            </p>
+        </div>
+
+        <form class="row g-2 justify-content-center mb-4" id="idFormFiltro">
+            <div class="col-sm-6 col-md-4">
+                <label for="idCmbCategoria" class="form-label fw-bold">Categoría</label>
+                <select class="form-select" id="idCmbCategoria">
+                    <option value="" selected>Todas las categorías</option>
+                    <option value="shooter">Shooter</option>
+                    <option value="mmorpg">MMORPG</option>
+                    <option value="strategy">Estrategia</option>
+                    <option value="racing">Carreras</option>
+                    <option value="sports">Deportes</option>
+                    <option value="fighting">Pelea</option>
+                    <option value="card">Cartas</option>
+                    <option value="moba">MOBA</option>
+                </select>
+            </div>
+        </form>
+
+        <!-- Mensajes de carga y de error -->
+        <div id="idEstado" class="text-center my-4" aria-live="polite"></div>
+
+        <!-- Listado de recursos -->
+        <div id="idListado" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mb-5"></div>
+    </div>
+
+    <!-- COMPONENTE MODAL DE BOOTSTRAP PARA EL DETALLE -->
+    <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLabel">Detalle del juego</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="idBodyModal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ejemplo5.js" defer></script>
+
+</body>
+
+</html>
